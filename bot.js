@@ -126,6 +126,9 @@ if (!process.env.clientId || !process.env.clientSecret) {
   // Load in some helpers that make running Botkit on Glitch.com better
   require(__dirname + '/components/plugin_glitch.js')(controller);
 
+// Load in slash commands
+require(__dirname + '/components/slash_commands.js')(controller);
+
   // enable advanced botkit studio metrics
   require('botkit-studio-metrics')(controller);
 
